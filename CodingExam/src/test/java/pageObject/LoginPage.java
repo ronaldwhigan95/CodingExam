@@ -16,19 +16,16 @@ public class LoginPage{
 	By loginPassword = By.id("password");
 	By errorMessage = By.xpath("/html/body/div/div/div[2]/div[1]/div/div/form/div[3]");
 
-	
-	//Given
+
 	public String getLoginUrl() {
 		return driver.getCurrentUrl();
 	}
 	
-	//when
 	public void setUserPassKey(String username, String password) {
 		driver.findElement(loginUname).sendKeys(username);
 		driver.findElement(loginPassword).sendKeys(password);
 	}
 
-	//and
 	public void pressLoginButton() {
 		driver.findElement(loginButton).click();
 	}

@@ -15,7 +15,7 @@ public class LoginStepDef {
 	WebDriver driver;
 	LoginPage loginPage;
 	HomePage homePage;
-	
+
 	final String driverKey = "webdriver.chrome.driver"; 
 	final String driverDir = "/Users/ronaldchester/devRonald/Training/Selenium/chromedriver";
 	final String sauceDemo = "https://www.saucedemo.com/";
